@@ -249,7 +249,8 @@ it(
     function () {
         Livewire::test(LivewireTestComponentA::class)
             ->assertDoesNotContainLivewireComponent(NonExistantLivewireTestComponent::class);
-});
+    }
+);
 
 it(
     'checks if Livewire component contains another Livewire component by component name',
@@ -297,8 +298,8 @@ it(
 );
 
 it('checks if it sees string before other string', function () {
-     Livewire::test(LivewireTestComponentA::class)
-        ->assertSeeBefore('First value', 'Second value');
+    Livewire::test(LivewireTestComponentA::class)
+       ->assertSeeBefore('First value', 'Second value');
 });
 
 it('checks if it does not see string before other string', function () {
