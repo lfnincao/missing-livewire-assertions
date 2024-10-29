@@ -15,9 +15,9 @@ namespace Livewire\Features\SupportTesting {
 
         public function assertMethodNotWired(string $method): self {}
 
-        public function assertMethodWiredToAction(string $methodName, string $action): self {}
+        public function assertMethodWiredToAction(string $action, string $methodName): self {}
 
-        public function assertMethodNotWiredToAction(string $methodName, string $action): self {}
+        public function assertMethodNotWiredToAction(string $action, string $methodName): self {}
 
         public function assertMethodWiredToForm(string $method): self {}
 
@@ -44,7 +44,7 @@ namespace Livewire\Features\SupportTesting {
         public function assertDoNotSeeBefore($valueBefore, $valueAfter): self {}
 
         public function assertFileDownloadedContains($content): self {}
-        
+
         public function assertFileDownloadedNotContains($content): self {}
     }
 }
